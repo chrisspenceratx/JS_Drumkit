@@ -12,19 +12,20 @@
     <!-- Main div that will hold all other divs (for data-key and key) -->
     <div class="keys">
         <div data-key="65" class="key">
-            <kbd>a</kbd>
+            <kbd>A</kbd>
             <span class="sound">clap</span>
         </div>
     </div>
 
 
     <!-- Calling audio source with matching data-key entry.  Audio files saved to folder to come.-->
-    <audio data-key="65" src="sounds.clap.wav"></audio>
+    <audio data-key="65" src="clappy.wav"></audio>
 
     <!-- Added event listerner for testing-->
     <script>
         window.addEventListener('keydown', function (e) {
-            console.log();
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            if (!audio) return; // stops function from running all together
         });
     </script>
 

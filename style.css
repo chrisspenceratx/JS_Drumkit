@@ -1,5 +1,19 @@
-.key {}
+.key {
+    border: 4px solid black;
+    color: red;
+}
 
-.keys {}
+.keys {
+    display: block;
+    font-size: 33px;
+}
 
-.sound {}
+kbd {
+    display: block;
+    font-size: 33px;
+}
+
+.sound {
+    font-size: 2rem;
+    color: green;
+}
