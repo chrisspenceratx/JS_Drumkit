@@ -13,10 +13,15 @@
     <div class="keys">
         <div data-key="65" class="key">
             <kbd>a</kbd>
-            <span class="sound"></span>
+            <span class="sound">clap</span>
         </div>
     </div>
 
+
+    <!-- Calling audio source with matching data-key entry.  Audio files saved to folder to come.-->
+    <audio data-key="65" src="sounds.clap.wav"></audio>
+
+    <!-- Added event listerner for testing-->
     <script>
         window.addEventListener('keydown', function (e) {
             console.log();
