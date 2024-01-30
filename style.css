@@ -8,6 +8,7 @@ body {
     text-align: center;
     background-image: url('concert_js.jpeg');
     background-size: cover;
+    background-position: center;
 }
 
 
