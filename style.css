@@ -6,6 +6,8 @@ body {
     padding: 10rem 5rem;
     display: flex;
     text-align: center;
+    background-image: url('concert_js.jpeg');
+    background-size: cover;
 }
 
 
