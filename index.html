@@ -32,9 +32,9 @@
     </div>
 
     <!-- Audio files connected with data-key information -->
-    <audio data-key="65" src="kicky.wav"></audio> <!-- kick using 'a' -->
-    <audio data-key="83" src="snarey.wav"></audio> <!-- snare using 's' -->
-    <audio data-key="68" src="hatty.wav"></audio> <!-- hat using 'd' -->
+    <audio data-key="65" src="src/components/kicky.wav"></audio> <!-- kick using 'a' -->
+    <audio data-key="83" src="src/components/snarey.wav"></audio> <!-- snare using 's' -->
+    <audio data-key="68" src="src/components/hatty.wav"></audio> <!-- hat using 'd' -->
 
     <!-- Added event listerner for testing -->
     <script>
@@ -42,8 +42,8 @@
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             console.log(e.keyCode);
             console.log(audio);
-            // if (!audio) return; // stops function from running all together
-            // audio.play();
+            if (!audio) return; // stops function from running all together
+            audio.play();
         });
     </script>
 
