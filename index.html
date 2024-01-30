@@ -10,16 +10,31 @@
 
 <body>
     <!-- Main div that will hold all other divs (for data-key and key) -->
-    <!-- <div class="keys">
+    <div class="keys">
         <div data-key="65" class="key">
             <kbd>A</kbd>
-            <span class="sound">clap</span>
+            <span class="sound">KICK</span>
         </div>
-    </div> -->
+    </div>
 
+    <div class="keys">
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">SNARE</span>
+        </div>
+    </div>
+
+    <div class="keys">
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">HAT</span>
+        </div>
+    </div>
+
+    <!-- Audio files connected with data-key information -->
     <audio data-key="65" src="kicky.wav"></audio> <!-- kick using 'a' -->
-    <audio data-key="83" src="snarey.wav"></audio> <!-- snare using 'b' -->
-    <audio data-key="68" src="hatty.wav"></audio> <!-- hat using 'c' -->
+    <audio data-key="83" src="snarey.wav"></audio> <!-- snare using 's' -->
+    <audio data-key="68" src="hatty.wav"></audio> <!-- hat using 'd' -->
 
     <!-- Added event listerner for testing -->
     <script>
