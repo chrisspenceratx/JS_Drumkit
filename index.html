@@ -40,9 +40,10 @@
     <script>
         window.addEventListener('keydown', function (e) {
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            console.log(e.keyCode);
-            console.log(audio);
-            if (!audio) return; // stops function from running all together
+            // console.log(e.keyCode);
+            // console.log(audio);
+            if (!audio) return; // stops function from running all together //
+            audio.currentTime = 0; // rewinds to start //
             audio.play();
         });
     </script>
