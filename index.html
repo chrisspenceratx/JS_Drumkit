@@ -17,16 +17,16 @@
         </div>
     </div> -->
 
-    <audio data-key="65" src="clappy.wav"></audio> <!-- kick -->
-    <audio data-key="65" src="clappy.wav"></audio> <!-- snare -->
-    <audio data-key="65" src="clappy.wav"></audio> <!-- hat -->
+    <audio data-key="65" src="clappy.wav"></audio> <!-- kick using 'a' -->
+    <audio data-key="83" src="clappy.wav"></audio> <!-- snare using 'b' -->
+    <audio data-key="68" src="clappy.wav"></audio> <!-- hat using 'c' -->
 
     <!-- Added event listerner for testing -->
     <script>
         window.addEventListener('keydown', function (e) {
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             console.log(e.keyCode);
-            console.log(audio);
+            // console.log(audio);
             // if (!audio) return; // stops function from running all together
             // audio.play();
         });
